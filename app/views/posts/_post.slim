@@ -1,9 +1,7 @@
-div id="#{dom_id post}"
-  p
-    strong class="text-3xl font-bold" Title:
+div id="#{dom_id post}" class="mt-6 border rounded-md border-gray-700 bg-slate-800 px-4"
+  p class="text-lg text-cyan-50"
     = post.title
   p
-    | Posted: #{time_tag post.created_at, "data-local": "time-ago"}
-  p
-    strong Content:
     == post.content
+  p class="text-sm text-sky-400 text-right"
+    | Posted: #{time_tag post.created_at, "data-local": "time-ago"}

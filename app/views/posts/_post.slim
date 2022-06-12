@@ -1,0 +1,9 @@
+div id="#{dom_id post}"
+  p
+    strong class="text-3xl font-bold" Title:
+    = post.title
+  p
+    | Posted: #{time_tag post.created_at, "data-local": "time-ago"}
+  p
+    strong Content:
+    == post.content
